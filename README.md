@@ -16,7 +16,6 @@ Read-only forensic analyzer for **disk image files only** — no raw drive acces
 ## Quick start
 
 ```bash
-cd /Users/n/Documents/ForensicTool
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
