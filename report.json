@@ -1,0 +1,60 @@
+{
+  "tool": "forensic-tool",
+  "version": "0.1.0",
+  "image": {
+    "path": "/Users/n/Documents/NEW/test.img",
+    "size_bytes": 512,
+    "sector_size": 512,
+    "sector_count": 1,
+    "hashes": {
+      "md5": "fa0a1876f8f6a771e556b7c435337d33",
+      "sha1": "78188e4bb2b90bada823edb83196cbf43f51912b",
+      "sha256": "54ddf8efe03108357af4a7f3ce76666abb2ba822956ed6cc373ab215652e657f"
+    },
+    "sectors_read": [
+      {
+        "sector_number": 0,
+        "offset": 0,
+        "length": 512,
+        "truncated": false
+      }
+    ]
+  },
+  "audit_log": {
+    "generated_at": "2026-06-18T07:33:53.620594+00:00",
+    "entry_count": 3,
+    "entries": [
+      {
+        "timestamp": "2026-06-18T07:33:53.620482+00:00",
+        "action": "open_image",
+        "details": {
+          "path": "/Users/n/Documents/NEW/test.img",
+          "size_bytes": 512,
+          "sector_size": 512,
+          "sector_count": 1
+        }
+      },
+      {
+        "timestamp": "2026-06-18T07:33:53.620582+00:00",
+        "action": "calculate_hashes",
+        "details": {
+          "path": "/Users/n/Documents/NEW/test.img",
+          "md5": "fa0a1876f8f6a771e556b7c435337d33",
+          "sha1": "78188e4bb2b90bada823edb83196cbf43f51912b",
+          "sha256": "54ddf8efe03108357af4a7f3ce76666abb2ba822956ed6cc373ab215652e657f"
+        }
+      },
+      {
+        "timestamp": "2026-06-18T07:33:53.620590+00:00",
+        "action": "read_sector",
+        "details": {
+          "sector_number": 0,
+          "sector_size": 512,
+          "offset": 0,
+          "bytes_read": 512,
+          "truncated": false
+        }
+      }
+    ]
+  }
+}
